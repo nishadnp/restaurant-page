@@ -1,1 +1,4 @@
-console.log("Webpack is WORKING!");
+
+import loadHome from "./home";
+
+loadHome();
