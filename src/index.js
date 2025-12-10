@@ -5,18 +5,16 @@ import loadAbout from "./about";
 
 const container = document.getElementById('content');
 
-document.querySelector('nav').addEventListener('click', e => {
+const routes = {
+    "home-btn": loadHome,
+    "menu-btn": loadMenu,
+    "about-btn": loadAbout,
+}
 
-    if (e.target.id === 'home-btn') {
-        container.innerHTML = "";
-        loadHome();
-    }
-    else if (e.target.id === 'menu-btn') {
-        container.innerHTML = "";
-        loadMenu();
-    }
-    else if (e.target.id === 'about-btn') {
-        container.innerHTML = "";
-        loadAbout();
-    }
+document.querySelector('nav').addEventListener('click', e => {
+    const loadFn = routes[e.target.id];
+    if (!loadFn) return;
+
+    container.innerHTML = "";
+    loadFn();
 });
