@@ -5,15 +5,20 @@ export default function loadHome() {
     container.classList.add('home');
 
     const headline = document.createElement('h1');
-    headline.textContent = 'My Restaurant';
+    headline.textContent = "Urban Bites";
 
-    const description = document.createElement('p');
-    description.textContent = 'Best food in the universe.';
+    const tagline = document.createElement('p');
+    tagline.textContent = "Fresh. Fast. Flavorful."
 
     const image = document.createElement('img');
     image.src = 'https://via.placeholder.com/300';
+
+    const description = document.createElement('p');
+    description.textContent = "A vibrant modern café serving quick bites, bold flavors, and fresh ingredients — perfect for your everyday cravings.";
+
     
     container.appendChild(headline);
+    container.appendChild(tagline);
     container.appendChild(description);
     container.appendChild(image);
 
