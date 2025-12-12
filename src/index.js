@@ -18,3 +18,6 @@ document.querySelector('nav').addEventListener('click', e => {
     container.innerHTML = "";
     loadFn();
 });
+
+// Load home page by default
+loadHome();
