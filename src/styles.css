@@ -10,6 +10,7 @@ html, body {
 }
 
 body {
+    background: linear-gradient(to bottom, #f4efe9 0%, #e3d6c4 100%);
     min-height: 100vh;
     min-width: 100vw;
     display: flex;
@@ -20,6 +21,9 @@ body {
 
 header {
     min-width: 100%;
+    background: linear-gradient(to bottom, #c7a27a 0%, #b8926a 100%);
+    border-bottom: 2px solid #e0d7c6;
+    padding: 1% 2%;
 }
 
 nav {
@@ -37,7 +41,8 @@ nav img {
 nav button {
     background-color: transparent;
     border: none;                  
-    font-size: 1.3rem;               
+    font-size: 1.3rem;  
+    font-weight: 700;             
     cursor: pointer;              
     padding: 0.5em 1em;            
     transition: background-color 0.2s ease; 
