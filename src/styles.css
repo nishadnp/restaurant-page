@@ -28,6 +28,11 @@ nav {
     padding: 1%;
 }
 
+nav img {
+    width: auto;
+    height: 90px;
+}
+
 .image-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
