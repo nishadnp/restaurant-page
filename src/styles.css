@@ -26,11 +26,30 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 1%;
+    align-items: center;
 }
 
 nav img {
     width: auto;
     height: 90px;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;                  
+    font-size: 1.3rem;               
+    cursor: pointer;              
+    padding: 0.5em 1em;            
+    transition: background-color 0.2s ease; 
+}
+
+nav button:hover {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+nav button:active {
+    background-color: rgba(0,0,0,0.2); 
 }
 
 .image-container {
