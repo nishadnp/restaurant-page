@@ -70,3 +70,18 @@ nav button:active {
     height: 300px;
 }
 
+footer {
+    min-width: 100%;
+    background-color: #b8926a; 
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
