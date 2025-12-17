@@ -70,11 +70,75 @@ nav button:active {
     height: 300px;
 }
 
+#menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#menu > article {
+    width: 40vw;
+    padding: 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+#menu h2 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    padding-bottom: 0.5rem;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    font-size: 0.95rem;
+}
+
+#menu li:hover {
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 6px;
+}
+
+#menu li {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+#menu h2 {
+    font-family: 'Georgia', serif;
+}
+
+.menu-section.savory {
+    background-color: #f7e6d2;
+}
+
+.menu-section.salad {
+    background-color: #e6f7e6;
+}
+
+.menu-section.dessert {
+    background-color: #fff0f0;
+}
+
+.menu-section.beverage {
+    background-color: #e6f0ff;
+}
+
+
 footer {
     min-width: 100%;
     background-color: #b8926a; 
     text-align: center;
     font-size: 0.9rem;
+    margin-top: 50px;
 }
 
 footer a {

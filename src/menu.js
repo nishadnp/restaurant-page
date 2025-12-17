@@ -40,6 +40,8 @@ export default function loadMenu() {
     for (const category in menuItems) {
 
         const itemSection = document.createElement('article');
+        itemSection.classList.add('menu-section', category.toLowerCase());
+        
         const sectionHeadline = document.createElement('h2');
         sectionHeadline.textContent = category;
         itemSection.appendChild(sectionHeadline);
