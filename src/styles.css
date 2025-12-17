@@ -137,6 +137,10 @@ nav button:active {
     padding: 0;
 }
 
+.about-us p, .about-us li {
+    font-size: 1.3rem;
+    width: 100ch
+}
 
 footer {
     min-width: 100%;
