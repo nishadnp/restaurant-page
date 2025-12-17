@@ -132,6 +132,11 @@ nav button:active {
     background-color: #e6f0ff;
 }
 
+.about-us ul {
+    list-style: none;
+    padding: 0;
+}
+
 
 footer {
     min-width: 100%;

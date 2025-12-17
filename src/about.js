@@ -1,6 +1,7 @@
 export default function loadAbout() {
   const content = document.getElementById('content');
   const container = document.createElement('div');
+  container.classList.add('about-us');
 
   // --- ABOUT ---
   const aboutTitle = document.createElement('h1');
