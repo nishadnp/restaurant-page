@@ -1,3 +1,4 @@
+/* --- Reset and box-sizing --- */
 *, ::before, ::after {
     box-sizing: border-box;
 }
@@ -9,6 +10,7 @@ html, body {
     line-height: 1.5;
 }
 
+/* --- Body layout and background --- */
 body {
     background: linear-gradient(to bottom, #f4efe9 0%, #e3d6c4 100%);
     min-height: 100vh;
@@ -19,6 +21,7 @@ body {
     justify-content: space-between;
 }
 
+/* --- Header and navigation --- */
 header {
     min-width: 100%;
     background: linear-gradient(to bottom, #c7a27a 0%, #b8926a 100%);
@@ -38,6 +41,7 @@ nav img {
     height: 90px;
 }
 
+/* --- Nav buttons --- */
 nav button {
     background-color: transparent;
     border: none;                  
@@ -57,6 +61,7 @@ nav button:active {
     background-color: rgba(0,0,0,0.2); 
 }
 
+/* --- Homepage images --- */
 .image-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -69,6 +74,8 @@ nav button:active {
     max-width: 450px;
     height: 300px;
 }
+
+/* --- Menu layout --- */
 
 #menu {
     display: grid;
@@ -116,6 +123,7 @@ nav button:active {
     font-family: 'Georgia', serif;
 }
 
+/* --- Category-specific background colors --- */
 .menu-section.savory {
     background-color: #f7e6d2;
 }
@@ -150,6 +158,7 @@ footer {
     margin-top: 50px;
 }
 
+/* --- Footer --- */
 footer a {
     text-decoration: none;
     color: inherit;

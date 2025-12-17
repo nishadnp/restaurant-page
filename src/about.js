@@ -1,3 +1,4 @@
+// Dynamically creates the About Us page with sections for info, hours, and contact
 export default function loadAbout() {
   const content = document.getElementById('content');
   const container = document.createElement('div');
@@ -43,12 +44,12 @@ export default function loadAbout() {
   contactSection.appendChild(contactList);
   container.appendChild(contactSection);
 
-  // finally append to content
+  // Append the complete About Us content to main container
   content.appendChild(container);
 }
 
 
-// helper function to create unordered list
+// Helper function to create an unordered list from an array of strings
 function createList(items) {
   const ul = document.createElement('ul');
 
