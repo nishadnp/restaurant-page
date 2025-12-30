@@ -14,7 +14,8 @@
 
 ## About 
 
-A dynamic restaurant homepage built with **JavaScript modules** and **Webpack**, demonstrating DOM manipulation, tab navigation, and modular CSS styling.
+A dynamic restaurant homepage built with **JavaScript modules** and **Webpack**, demonstrating DOM manipulation, tab navigation, and modular CSS styling. Bundled using split Webpack configs for development and production.
+
 
 ## Features
 
@@ -46,14 +47,14 @@ A dynamic restaurant homepage built with **JavaScript modules** and **Webpack**,
 3.  Start development server:
 
     ```bash
-    npx webpack serve
+    npm run start
     ```
 4. Open http://localhost:8080 in your browser.
 
 ## Build
 
 ```bash
-npx webpack
+npm run build
 ```
 This bundles the application into the `dist` folder for production.
 
@@ -62,12 +63,7 @@ This bundles the application into the `dist` folder for production.
 Deployed via **GitHub Pages**:
 
 ```bash 
-git branch gh-pages
-git checkout gh-pages && git merge main --no-edit
-npx webpack
-git add dist -f && git commit -m "Deployment commit"
-git subtree push --prefix dist origin gh-pages
-git checkout main
+npm run deploy
 ```
 
 ## Project Structure 
@@ -84,6 +80,4 @@ src/
 ```
 
 ## Author 
-
-**Nishad Np**  
-GitHub: [@nishadnp](https://github.com/nishadnp)
+**Nishad Np** | [@nishadnp](https://github.com/nishadnp)
